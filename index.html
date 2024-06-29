@@ -10,23 +10,25 @@
         <div id="input-container">
             <h1>Metric/Imperial Unit Conversion</h1>
             <label for="number-to-convert">Number To Convert:</label>
-            <input inputmode="decimal" type="text" name="number-to-convert" id="input-box">
+            <input id="input-box" inputmode="decimal" type="text" name="number-to-convert" value="20">
             <button id="convert-btn" type="button">Convert</button>
         </div>
         
-
-        <div id="length-container">
-            <h2>Length (Meter/Feet)</h2>
-            <p id="length-results"></p>
+        <div id="results-column">
+            <div id="length-container" class="result-container">
+                <h2>Length (Meter/Feet)</h2>
+                <p id="length-results"></p>
+            </div>
+            <div id="volume-container" class="result-container">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p id="volume-results"></p>
+            </div>
+            <div id="mass-container" class="result-container">
+                <h2>Mass (Kilograms/Pounds)</h2>
+                <p id="mass-results"></p>
+            </div>
         </div>
-        <div id="volume-container">
-            <h2>Volume (Liters/Gallons)</h2>
-            <p id="volume-results"></p>
-        </div>
-        <div id="mass-container">
-            <h2>Mass (Kilograms/Pounds)</h2>
-            <p id="mass-results"></p>
-        </div>
+        
 
         <script src="index.js"></script>
     </body>
