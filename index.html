@@ -1,8 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <title>Metric/Imperial Unit Conversion</title>
     </head>
     <body>
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <label for="number-to-convert">Number To Convert:</label>
+        <input type="number" name="number-to-convert" id="input-box">
+        <button id="convert-btn" type="button">Convert</button>
+
+        <div id="length-container">
+            <h2>Length (Meter/Feet)</h2>
+            <p id="length-results"></p>
+        </div>
+        <div id="volume-container">
+            <h2>Volume (Liters/Gallons)</h2>
+            <p id="volume-results"></p>
+        </div>
+        <div id="mass-container">
+            <h2>Mass (Kilograms/Pounds)</h2>
+            <p id="mass-results"></p>
+        </div>
+
         <script src="index.js"></script>
     </body>
 </html>
