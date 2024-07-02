@@ -39,7 +39,6 @@ function convert(category, input) {
     }
     const curId = `${category}-results`
     const curEl = document.getElementById(curId)
-    console.log(curEl)
     curEl.textContent = `${input} ${metUnit} = ${toImp} ${impUnit} | ${input} ${impUnit} = ${toMet} ${metUnit}`
 }
 
@@ -47,9 +46,13 @@ function convert(category, input) {
 function renderConversion() {
     let userNumber = inputBox.value
     userNumber = Number(userNumber)
-    convert("length", userNumber)
-    convert("volume", userNumber)
-    convert("mass", userNumber)
+    if (Number.isNaN(userNumber)) {
+        // console.log("That is not a number.")
+    } else {
+        convert("length", userNumber)
+        convert("volume", userNumber)
+        convert("mass", userNumber)
+    }
 }
 
 // initial conversions
